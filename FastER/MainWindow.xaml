@@ -5,8 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FastER"
         mc:Ignorable="d"
+        xmlns:controls="clr-namespace:FastER.Views"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <TextBlock>Hello</TextBlock>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <controls:AppUI Grid.Column="0"/>
+        <controls:HospitalMenu Grid.Column="2"/>
     </Grid>
 </Window>
